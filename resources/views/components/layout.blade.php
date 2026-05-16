@@ -19,11 +19,7 @@
 
  <body class="">
      <x-nav />
-     <nav>
-         <a href="/ideas">Home</a>
-         <a href="/about">About Us</a>
-         <a href="/contact">Contact Us</a>
-     </nav>
+     
      <main class="max-w-3xl mx-auto mt-10">
          {{ $slot }}
      </main>

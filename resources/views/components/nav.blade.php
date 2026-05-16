@@ -1,5 +1,14 @@
 <div class="navbar bg-base-100 shadow-sm">
+
     <div class="flex-1">
+        <ul class="flex justify-center items-center gap-x-6 text-sm">
+            <li><a href="/ideas">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            @can('view-admin')
+                <li><a href="/admin">Admin</a></li>
+            @endcan
+        </ul>
         <a class="btn btn-ghost text-xl">Ideas</a>
     </div>
 

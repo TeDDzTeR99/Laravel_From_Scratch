@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\SessionController;
 use App\Http\Controllers\IdeaController;
+use Illuminate\Auth\Access\Gate;
 use Illuminate\Support\Facades\Route;
 
 Route::view('/about', 'about');
@@ -37,3 +38,7 @@ Route::middleware('guest')->group(function () {
     Route::get('/register', [RegisteredUserController::class, 'create']);
     Route::post('/register', [RegisteredUserController::class, 'store']);
 });
+
+Route::get('/admin', function () {
+    return 'Admin area';
+})->middleware('can:view-admin');
