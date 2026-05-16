@@ -7,36 +7,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ $title }}</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-            }
-            nav {
-                background-color: #333;
-                padding: 1em;
-            }
-            nav a {
-                color: white;
-                margin-right: 1em;
-                text-decoration: none;
-            }
-            main {
-                padding: 2em;
-            }
-            .max-w-400 {
-                max-width: 400px;
-                margin: 0 auto;
-            }
-            .card {
-                background: #e3e3e3;
-                padding: 1em;
-                text-align: center;
-            }
+            
         </style>
     </head>
-    <body>
+    <body class="bg-gray-700 p-6 max-w-xl mx-auto">
         <nav>
             <a href="/">Home</a>
             <a href="/about">About Us</a>
