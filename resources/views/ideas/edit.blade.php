@@ -14,6 +14,7 @@
                 <a href="/ideas/{{ $idea->id }}"
                  class="rounded-md bg-red-500 px-3 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-500">Cancel</a>
                  <button type="submit"  form="delete-form" class="rounded-md bg-red-500 px-3 py-2 text-sm font-semibold text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-500">Delete</button>
+                 <x-form.error name="description" />
             </div>
         </form>
         <form id="delete-form" method="POST" action="/ideas/{{ $idea->id }}">
