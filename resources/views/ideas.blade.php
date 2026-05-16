@@ -15,7 +15,7 @@
             
         </form>
         
-        @if (count($ideas))
+        @if ($ideas->count() > 0)
             <form method="GET" action="/delete-ideas">
                 @csrf
                 <div class="mt-6 flex items-center justify-end gap-x-6">
@@ -26,7 +26,7 @@
                 <h2 class="font-bold"> Your Ideas </h2>
                 <ul class="mt-6">
                     @foreach ($ideas as $idea)
-                        <li class="text-sm">{{ $idea }}</li>
+                        <li class="text-sm">{{ $idea->description }}</li>
                     @endforeach
                 </ul>
             </div>
