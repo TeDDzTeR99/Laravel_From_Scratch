@@ -1,5 +1,5 @@
 @props([
-    'name' => 'required'
+    'name' => 'required',
 ])
 
 @error($name)
